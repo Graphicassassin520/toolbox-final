@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Web App Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --custom-gold: #d3b38a;
+        }
+        body {
+            background: linear-gradient(to bottom, #2c3e50, #1a252f);
+            color: #ecf0f1;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .dashboard-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ecf0f1;
+            transition: transform 0.3s;
+        }
+        .dashboard-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .dashboard-item i {
+            font-size: 2em;
+            color: var(--custom-gold);
+            margin-bottom: 10px;
+        }
+        .dashboard-item span {
+            display: block;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <a href="vacation-cost-calculator.html" class="dashboard-item">
+            <i class="fas fa-calculator"></i>
+            <span>Vacation Cost Calculator</span>
+        </a>
+        <a href="maintenance-fee-calculator.html" class="dashboard-item">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Maintenance Fee Calculator</span>
+        </a>
+        <a href="timeshare-comparison-calculator.html" class="dashboard-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Timeshare Comparison Calculator</span>
+        </a>
+        <a href="rental-income-calculator.html" class="dashboard-item">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Rental Income Calculator</span>
+        </a>
+        <a href="charter-certificate-generator.html" class="dashboard-item">
+            <i class="fas fa-certificate"></i>
+            <span>Charter Certificate Generator</span>
+        </a>
+    </div>
+</body>
+</html>
